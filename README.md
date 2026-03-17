@@ -277,6 +277,106 @@ These metrics assess the model's ability to distinguish between employment categ
 
 ---
 
+# Key Findings and Insights
+
+Several patterns emerged from the exploratory analysis and modeling process.
+
+### Employment Distribution
+
+The majority of individuals in the dataset are classified as **employed**, reflecting the structure of the labor market where unemployment rates remain relatively low relative to labor force participation.
+
+### Demographic Effects
+
+Demographic variables such as **age, sex, and marital status** exhibit observable differences in employment outcomes.
+
+* Older working-age individuals tend to show higher employment rates.
+* Gender differences appear in employment participation.
+* Marital status is associated with labor force participation patterns.
+
+### Education and Labor Market Outcomes
+
+Educational attainment shows a strong relationship with employment status.
+
+Individuals with **higher levels of education** tend to exhibit higher employment participation and more stable employment outcomes.
+
+### Geographic Differences
+
+Urban and rural classifications reveal differences in employment patterns, reflecting structural variations in economic opportunities between regions.
+
+### Work Intensity and Labor Participation
+
+Among employed individuals, the distribution of **hours worked** indicates significant variation in work intensity.
+This may suggest the presence of **underemployment**, a common feature of developing labor markets.
+
+### Job Search Behavior
+
+Among unemployed respondents, job search activity and willingness to work help distinguish individuals actively participating in the labor market from those outside it.
+
+### Feature Relationships
+
+Correlation analysis of numerical variables suggests limited multicollinearity between most predictors, allowing machine learning models to leverage multiple independent signals.
+
+### Dimensionality Reduction
+
+The PCA visualization indicates partial separation between employment categories, suggesting that demographic and labor characteristics contain useful information for classification tasks.
+
+Overall, the analysis demonstrates that **demographic characteristics, education, and labor participation indicators collectively provide predictive signals for employment status classification**.
+
+---
+
+# Future Work and Extensions
+
+This project represents an exploratory application of machine learning to labor force survey data. Several extensions could further improve the analysis.
+
+### Advanced Machine Learning Models
+
+Future work could explore additional algorithms such as:
+
+* Random Forest
+* Gradient Boosting (XGBoost / LightGBM)
+* Support Vector Machines
+* Neural Networks
+
+These models may capture more complex nonlinear relationships within the data.
+
+### Hyperparameter Optimization
+
+Model performance could be improved through systematic hyperparameter tuning using techniques such as:
+
+* Grid Search
+* Random Search
+* Bayesian Optimization
+
+### Feature Engineering
+
+Additional features could be constructed to improve predictive power, including:
+
+* interaction terms between demographic variables
+* aggregated household-level characteristics
+* regional economic indicators
+
+### Temporal Analysis
+
+The Labor Force Survey is conducted **quarterly**, which opens opportunities for **time-series analysis of labor market dynamics** across multiple survey waves.
+
+### Policy-Oriented Analysis
+
+Further work could examine how employment outcomes vary across:
+
+* geographic regions
+* education levels
+* gender groups
+
+Such analysis could contribute to **policy discussions on labor market inequality and employment opportunities**.
+
+### Model Interpretability
+
+Interpretability techniques such as **SHAP values or feature importance analysis** could be applied to identify which variables most strongly influence employment status predictions.
+
+These extensions would transform the project from an exploratory analysis into a **more comprehensive labor market modeling study**.
+
+---
+
 # Project Structure
 
 ```
