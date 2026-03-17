@@ -380,16 +380,19 @@ These extensions would transform the project from an exploratory analysis into a
 # Project Structure
 
 ```
-lfs2016-labor-market-analysis
+lfs2016-labor-market-analysis/
 │
-├── data
-│   ├── raw
-│   └── metadata
+├── data/
+│   ├── raw/
+│   │   └── README.md
+│   │
+│   └── metadata/
+│       └── lfs_metadata_dictionary.xlsx
 │
-├── notebooks
+├── notebooks/
 │   └── labor_force_survey_analysis.ipynb
 │
-├── figures
+├── figures/
 │   ├── employment_status_distribution.png
 │   ├── age_distribution_by_employment.png
 │   ├── education_vs_employment.png
@@ -401,8 +404,9 @@ lfs2016-labor-market-analysis
 │   ├── correlation_matrix.png
 │   └── pca_projection.png
 │
+├── README.md
 ├── requirements.txt
-└── README.md
+└── .gitignore
 ```
 
 ---
